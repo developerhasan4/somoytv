@@ -38,7 +38,7 @@
    <hero>
      
                       <!--for About Me -->
-  <!--
+  
 
   <!-- live video -->
   <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls preload="auto" data-setup='{}' width='100%' height='auto'>
@@ -53,26 +53,7 @@
   </script>
      
 -->
-     <!-- Create a video element -->
-<video id="video" controls></video>
-
-<!-- Use hls.js to create a player and load the .m3u8 file -->
-<script>
-  var video = document.getElementById('video');
-  if(Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource('http://iptvbd.jagobd.com:1931/live-orgin/somoyt000011226615544544.stream/playlist.m3u8');
-    hls.attachMedia(video);
-    video.play();
-  }
-  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'http://iptvbd.jagobd.com:1931/live-orgin/somoyt000011226615544544.stream/playlist.m3u8';
-    video.addEventListener('loadedmetadata',function() {
-      video.play();
-    });
-  }
- 
-</script
+     
   <!-- add -->
 
 
